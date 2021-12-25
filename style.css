@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background-repeat: no-repeat;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    min-height: 753px;
+    height: 100%;
+    padding: 20px 0 60px;
+}
+.he{
+    width: fit-content;
+    color: white;
+    margin: 10px auto;
+}
+form{
+    max-width: 500px;
+    height: 35px;
+    display: flex;
+    margin: 30px auto;
+}
+form input{
+    width: 75%;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    padding-inline-start: 20px;
+    font-size: 18px;
+}
+form button{
+    width: 25%;
+    border-radius: 0 10px 10px 0;
+    background: rgb(13, 25, 194);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+.cont{
+    max-width: 1250px;
+    /* background: #000; */
+    margin: 10px auto;
+    color: black;
+}
+.cards-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.card{
+    background: #fefefe;
+    width: 250px;
+    padding: 30px 10px 60px;
+    border-radius: 13px;
+    margin-left: 31.25px;
+    margin-right: 31.25px;
+    margin-top: 31.25px;
+    position: relative;
+    
+}
+.card::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 50px;
+    background: #53627cd3;
+    left: 15px;
+    bottom: -10px;
+    z-index: -10;
+    border-radius: 0 0 15px 15px;
+}
+.card > .location{
+    
+}
+.card > p{
+    margin-left: 20px;
+    font-size: 22px;
+
+    display: inline-block;
+}
+.card >p> span{
+    background: #ff8c00;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+    margin-left: 5px;
+    display: inline-block;
+    transform: translateY(-5px);
+}
+.card > div:last-child{
+    margin-top: 20px;
+    text-align: center;
+}
+.card > div:last-child .temp{
+    display: flex;
+    justify-content: center;
+}
+.card > div:last-child .temp h1{
+    font-size: 70px;
+}
+.card > div:last-child .temp span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.card > div:last-child .status{
+    margin-top: 30px;
+}
+.card > div:last-child .status img{
+    animation: icon 2s alternate-reverse infinite;
+}
+.card > div:last-child .status p{
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+@keyframes icon{
+    0%{
+        transform: translate(-10px,-10);
+    }
+    100%{
+        transform: translate(10px,10px);
+
+    }
+}
