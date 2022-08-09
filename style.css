@@ -10,7 +10,7 @@ body{
     background-repeat: no-repeat;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     min-height: 753px;
-    height: 100%;
+    height: 100vh;
     padding: 20px 0 60px;
 }
 .he{
